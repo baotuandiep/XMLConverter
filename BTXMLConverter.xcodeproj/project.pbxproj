@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DFB2B7B21EE876EC00A634B5 /* BTXMLConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = DFB2B7B01EE876EC00A634B5 /* BTXMLConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFB2B7B91EE8776400A634B5 /* BTXMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB2B7B81EE8776400A634B5 /* BTXMLConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DFB2B7AD1EE876EC00A634B5 /* BTXMLConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTXMLConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB2B7B01EE876EC00A634B5 /* BTXMLConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTXMLConverter.h; sourceTree = "<group>"; };
 		DFB2B7B11EE876EC00A634B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB2B7B81EE8776400A634B5 /* BTXMLConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTXMLConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				DFB2B7B01EE876EC00A634B5 /* BTXMLConverter.h */,
 				DFB2B7B11EE876EC00A634B5 /* Info.plist */,
+				DFB2B7B81EE8776400A634B5 /* BTXMLConverter.swift */,
 			);
 			path = BTXMLConverter;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					DFB2B7AC1EE876EC00A634B5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB2B7B91EE8776400A634B5 /* BTXMLConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		DFB2B7B61EE876EC00A634B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +256,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swift.BTXMLConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +264,7 @@
 		DFB2B7B71EE876EC00A634B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
